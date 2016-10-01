@@ -16,17 +16,7 @@
 
     <body>
 
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
-                <ul class="nav navbar-nav">
-                    <li<?php if($pageid == 1) { echo ' class="active"'; } ?>><a href="?page=1">Home</a></li>
-                    <li<?php if($pageid == 2) { echo ' class="active"'; } ?>><a href="?page=2">About Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact</a></li>
-
-                </ul>
-            </div>
-        </nav>
+        <?php include(D_TEMPLATE.'/navigation.php'); ?>
 
         <div class="container">
 
@@ -35,28 +25,9 @@
                 <?php echo $page['body']; ?>
             </p>
 
-
-
-
-
-
-
-
-
         </div>
 
-
-
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">
-                Place Content Here
-            </p>
-
-        </div>
-
-    </footer>
-
+        <?php include(D_TEMPLATE.'/footer.php'); ?>
 
     </body>
 

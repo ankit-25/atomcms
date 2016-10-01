@@ -4,6 +4,9 @@
 //variables
 $site_title = 'AtomCMS 2.0';
 
+//Constants
+DEFINE('D_TEMPLATE','template');
+
 //Database Connection
 $dbc = mysqli_connect('localhost','dev','thepassword1','atomcms') or die('Cannot connect because : '.mysqli_connect_error());
 
