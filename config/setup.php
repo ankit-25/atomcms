@@ -10,8 +10,6 @@ DEFINE('D_TEMPLATE','template');
 //Database Connection
 $dbc = mysqli_connect('localhost','dev','thepassword1','atomcms') or die('Cannot connect because : '.mysqli_connect_error());
 
-
-
 if( isset ($_GET['page']) ) {
 
     $pageid = $_GET['page'];
@@ -22,9 +20,9 @@ if( isset ($_GET['page']) ) {
 
 }
 
-
 //Functions
-include ('functions/data.php'); // Including the functions
+include ('functions/data.php');
+include ('functions/template.php');
 
 #Page Setup
 
