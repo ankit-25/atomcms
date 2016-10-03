@@ -21,13 +21,20 @@
         <div class="container">
 
             <h1><?php echo $page['header']; ?></h1>
-            <p>
-                <?php echo $page['body']; ?>
-            </p>
+            <?php echo $page['body_formated']; ?>
 
         </div>
 
+
         <?php include(D_TEMPLATE.'/footer.php'); ?>
+
+        <div id="console-debug">
+
+            <pre>
+                <?php print_r($page); ?>
+            </pre>
+
+        </div>
 
     </body>
 

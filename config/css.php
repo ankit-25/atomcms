@@ -23,15 +23,6 @@
 
 <style media="screen">
 
-    html {
-    position: relative;
-    min-height: 100%;
-    }
-
-    body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    }
 
     .footer {
     position: absolute;
@@ -40,9 +31,22 @@
     /* Set the fixed height of the footer here */
     height: 60px;
     background-color: #f5f5f5;
+    padding: 20px 0;
     }
-    .footer{
-        padding: 20px 0;
+
+    #btn-debug{
+        position: absolute;
+    }
+    #console-debug{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 40%;
+        height: 800px;
+        overflow-y: scroll;
+    }
+    #console-debug pre{
+        height: 800px;
     }
 
 </style>
